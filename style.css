@@ -50,7 +50,8 @@
   transform: translate(-50%, -50%);
 }
 
-#prev, #next {
+#prev,
+#next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -72,4 +73,19 @@
 
 #next {
   right: 30px;
+}
+
+@keyframes ativando {
+  from {
+    top: 100%;
+    opacity: 0;
+  }
+}
+
+.item.ativo img.fruta {
+  animation: ativando 0.5s ease-in-out 1;
+}
+
+.item.ativo .titulo {
+  animation: ativando 0.5s ease-in-out 1;
 }
